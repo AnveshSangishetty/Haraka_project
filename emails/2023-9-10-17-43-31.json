@@ -1,0 +1,60 @@
+{
+     "attachments": {},
+     "headers": {},
+     "headerLines": {
+          "0": {
+               "key": "received",
+               "line": "Received: from instance-2.c.alert-streamer-398418.internal (ip6-localhost [::1])\r\n\tby instance-2 (Haraka/3.0.2) with ESMTP id 2493F5D1-37E4-4848-8063-B45F9E75639E.1\r\n\tenvelope-from <123333@gmail.com>;\r\n\tSun, 10 Sep 2023 17:43:31 +0000"
+          },
+          "1": {
+               "key": "date",
+               "line": "Date: Sun, 10 Sep 2023 17:43:30 +0000"
+          },
+          "2": {
+               "key": "to",
+               "line": "To: 233334@gmail.com"
+          },
+          "3": {
+               "key": "from",
+               "line": "From: 123333@gmail.com"
+          },
+          "4": {
+               "key": "subject",
+               "line": "Subject: Just a test"
+          },
+          "5": {
+               "key": "message-id",
+               "line": "Message-Id: <20230910174330.034002@instance-2.c.alert-streamer-398418.internal>"
+          },
+          "6": {
+               "key": "x-mailer",
+               "line": "X-Mailer: swaks v20201014.0 jetmore.org/john/code/swaks/"
+          }
+     },
+     "text": "Take it easy bro!\n\n\n",
+     "textAsHtml": "<p>Take it easy bro!</p>",
+     "subject": "Just a test",
+     "date": {},
+     "to": {
+          "value": {
+               "0": {
+                    "address": "233334@gmail.com",
+                    "name": ""
+               }
+          },
+          "html": "<span class=\"mp_address_group\"><a href=\"mailto:233334@gmail.com\" class=\"mp_address_email\">233334@gmail.com</a></span>",
+          "text": "233334@gmail.com"
+     },
+     "from": {
+          "value": {
+               "0": {
+                    "address": "123333@gmail.com",
+                    "name": ""
+               }
+          },
+          "html": "<span class=\"mp_address_group\"><a href=\"mailto:123333@gmail.com\" class=\"mp_address_email\">123333@gmail.com</a></span>",
+          "text": "123333@gmail.com"
+     },
+     "messageId": "<20230910174330.034002@instance-2.c.alert-streamer-398418.internal>",
+     "html": false
+}

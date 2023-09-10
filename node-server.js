@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const path=require('path');
 const app = express();
 const port = 3000;
 
@@ -9,20 +10,16 @@ app.use(bodyParser.json());
 
 app.post('/receive-email', (req, res) => {
     const emailData = req.body;
-    const fname='email.json'; // file name
     const fdata=JSON.stringify(emailData,null,5);
+    const now = new Date();
+    const timestamp = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}-${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
+
+    fs.writeFileSync(path.join(__dirname,`/emails/${timestamp}.json`),fdata)
     
-    // Checking if file already exists
-    if(fs.existsSync(fname)){
-        fs.appendFileSync(fname,`${fdata}\n`)
-    }
-    else{
-        fs.writeFileSync(fname,`${fdata}\n`);
-    }
 
     // Printing data to the console
-    console.log('From:', emailData.from);
-    console.log('To:', emailData.to);
+    console.log('From:', emailData.from.text);
+    console.log('To:', emailData.to.text);
     console.log('Subject:', emailData.subject);
 
     res.sendStatus(200);
