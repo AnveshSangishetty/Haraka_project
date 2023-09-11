@@ -10,24 +10,12 @@ exports.my_hook_data_post = async function (next, connection) {
     this.loginfo("hook called")
     const transaction =connection.transaction;
     const parsed=await simpleParser(transaction.message_stream)
-    const parsed_mail=email_to_json(parsed)
+    parsed.headers=[...parsed.headers]
  
-    sendToNodeServer(parsed_mail,this);
+    sendToNodeServer(parsed,this);
 
     next();
-};
 
-function email_to_json(email){
-    const json={}
-    for(const key in email){
-        if(typeof email[key] === 'object' && email[key]!==null){
-            json[key]=email_to_json(email[key])
-        }
-        else{
-            json[key]=email[key]
-        }
-    }
-    return json;
 }
 
 function sendToNodeServer(emailData,t) {
