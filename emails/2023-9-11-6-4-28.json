@@ -1,0 +1,107 @@
+{
+    "attachments": [],
+    "headers": [
+         [
+              "received",
+              "from instance-2.c.alert-streamer-398418.internal (ip6-localhost [::1]) by instance-2 (Haraka/3.0.2) with ESMTP id 45C2444C-D16A-4339-9646-38378D854548.1 envelope-from <123@gmail.com>; Mon, 11 Sep 2023 06:04:28 +0000"
+         ],
+         [
+              "date",
+              "2023-09-11T06:04:28.000Z"
+         ],
+         [
+              "to",
+              {
+                   "value": [
+                        {
+                             "address": "345@gmail.com",
+                             "name": ""
+                        }
+                   ],
+                   "html": "<span class=\"mp_address_group\"><a href=\"mailto:345@gmail.com\" class=\"mp_address_email\">345@gmail.com</a></span>",
+                   "text": "345@gmail.com"
+              }
+         ],
+         [
+              "from",
+              {
+                   "value": [
+                        {
+                             "address": "123@gmail.com",
+                             "name": ""
+                        }
+                   ],
+                   "html": "<span class=\"mp_address_group\"><a href=\"mailto:123@gmail.com\" class=\"mp_address_email\">123@gmail.com</a></span>",
+                   "text": "123@gmail.com"
+              }
+         ],
+         [
+              "subject",
+              "Just testing"
+         ],
+         [
+              "message-id",
+              "<20230911060428.037627@instance-2.c.alert-streamer-398418.internal>"
+         ],
+         [
+              "x-mailer",
+              "swaks v20201014.0 jetmore.org/john/code/swaks/"
+         ]
+    ],
+    "headerLines": [
+         {
+              "key": "received",
+              "line": "Received: from instance-2.c.alert-streamer-398418.internal (ip6-localhost [::1])\r\n\tby instance-2 (Haraka/3.0.2) with ESMTP id 45C2444C-D16A-4339-9646-38378D854548.1\r\n\tenvelope-from <123@gmail.com>;\r\n\tMon, 11 Sep 2023 06:04:28 +0000"
+         },
+         {
+              "key": "date",
+              "line": "Date: Mon, 11 Sep 2023 06:04:28 +0000"
+         },
+         {
+              "key": "to",
+              "line": "To: 345@gmail.com"
+         },
+         {
+              "key": "from",
+              "line": "From: 123@gmail.com"
+         },
+         {
+              "key": "subject",
+              "line": "Subject: Just testing"
+         },
+         {
+              "key": "message-id",
+              "line": "Message-Id: <20230911060428.037627@instance-2.c.alert-streamer-398418.internal>"
+         },
+         {
+              "key": "x-mailer",
+              "line": "X-Mailer: swaks v20201014.0 jetmore.org/john/code/swaks/"
+         }
+    ],
+    "text": "Test bro!\n\n\n",
+    "textAsHtml": "<p>Test bro!</p>",
+    "subject": "Just testing",
+    "date": "2023-09-11T06:04:28.000Z",
+    "to": {
+         "value": [
+              {
+                   "address": "345@gmail.com",
+                   "name": ""
+              }
+         ],
+         "html": "<span class=\"mp_address_group\"><a href=\"mailto:345@gmail.com\" class=\"mp_address_email\">345@gmail.com</a></span>",
+         "text": "345@gmail.com"
+    },
+    "from": {
+         "value": [
+              {
+                   "address": "123@gmail.com",
+                   "name": ""
+              }
+         ],
+         "html": "<span class=\"mp_address_group\"><a href=\"mailto:123@gmail.com\" class=\"mp_address_email\">123@gmail.com</a></span>",
+         "text": "123@gmail.com"
+    },
+    "messageId": "<20230911060428.037627@instance-2.c.alert-streamer-398418.internal>",
+    "html": false
+}
